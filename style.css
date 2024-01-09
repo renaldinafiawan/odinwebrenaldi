@@ -5,8 +5,6 @@ html {
 
 body {
     margin : 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
     
 }
 
@@ -219,7 +217,9 @@ h3:hover , p:hover{
 }
 
 .backgroundContainer2 {
- margin: 0;
+    margin: 0;
+
+
     
 }
 #background2 {
@@ -229,7 +229,131 @@ h3:hover , p:hover{
     object-fit:cover;
     top:auto;
     bottom: 0;
-    filter: brightness(1.2);
+    filter: brightness(2.2);
     z-index: -2;
     
 }
+
+.layer3Container {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(0,0,0, 0.7);
+    box-shadow: 0 0 2em rgb(69 69 69);
+    color: white;
+}
+
+
+.greetings2, .description2{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-transform: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: justify;
+}
+
+.layer3{
+    position: relative;
+}
+
+.description2 {
+    color: white;
+    justify-content: justify;
+    align-items: end;
+    font-size:2.5em;
+    width: 1000px;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size:5em;
+    font-weight:bold;
+    margin-bottom: 10em;
+}
+
+
+.layer4Bg {
+    background-image: linear-gradient(rgb(26, 79, 106),rgb(0, 0, 0));    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+.layer4Content {
+    background:rgb(32, 32, 32);
+    width: 60em;
+    padding: 2em 0;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 2em;
+
+}
+
+.layer4Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 2em 0 4em;
+    line-height: 1.3em;
+}
+
+.layer4TextHeading {
+    font-size: 1.1em;
+    font-family: "sunflower";
+    font-weight: bold;
+}
+
+.layer4TextSubtext {
+    margin-top: 3px;
+}
+
+
+.layer4ContactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5em 0 3em;
+}
+
+.layer4Contact {
+    color: white;
+    border: 0.15em solid white;
+    background-image: linear-gradient(rgba(0, 171, 194, 0.5), rgba(1, 68, 68, 0.5));
+    border-radius: 0.4em;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "kawashiro";
+}
+
+.layer4Contact:hover {
+    background-image: linear-gradient(rgba(0, 171, 194, 0.7), rgba(1, 68, 68, 0.7));
+}
+
+.footerLayerBg {
+    background: rgb(0, 0, 0);
+    padding: 1.25em 0;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+
+.footerLayerAuthor {
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    font-family: "izayoi";
+}
+
